@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^9.1.0",
+    "mysql2": "^2.3.3"
+  },
+  "name": "employee_tracker",
+  "description": "track employees",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndracic/employee_tracker.git"
+  },
+  "author": "nermin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndracic/employee_tracker/issues"
+  },
+  "homepage": "https://github.com/ndracic/employee_tracker#readme"
+}
