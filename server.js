@@ -15,20 +15,11 @@ const promptMessages = {
     exit: "Exit"
   };
 
-//intialize server and call functions
-db.connect(error => {
-    if(error) throw error;
-    console.log('Connected to database');
-    startApp();
-    getDepartment();
-    getRole();
-    getEmployee();
-});
 
 function prompt() {
     inquirer.prompt({
-        tyoe: "list",
         name: 'action',
+        tyoe: "list",
         message: "What would you like to do?",
         choices: [
             promptMessages.viewByManager,
@@ -38,7 +29,7 @@ function prompt() {
             promptMessages.addEmployee,
             promptMessages.removeEmployee,
             promptMessages.updateRole,
-            promptMessages.exit
+            // promptMessages.exit
         ]
     }).then(selection => {
         console.log('Selected:', selection);
