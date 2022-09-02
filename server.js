@@ -19,7 +19,7 @@ const promptMessages = {
 function prompt() {
     inquirer.prompt({
         name: 'action',
-        tyoe: "list",
+        type: "list",
         message: "What would you like to do?",
         choices: [
             promptMessages.viewByManager,
