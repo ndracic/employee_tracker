@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const db = require('./connect');
 
-const consoleTable = require('console.table');
+require('console.table');
 
 const promptMessages = {
     viewAllEmployees: "View All Employees", 
@@ -29,7 +29,7 @@ function prompt() {
             promptMessages.addEmployee,
             promptMessages.removeEmployee,
             promptMessages.updateRole,
-            // promptMessages.exit
+            promptMessages.exit
         ]
     }).then(selection => {
         console.log('Selected:', selection);
@@ -125,6 +125,7 @@ function viewByDepartment() {
     ORDER BY manager;`;
     db.query(query, (err, res) => {
       if (err) throw err;
+      console.log(res)
       console.log('VIEW EMPLOYEE BY MANAGER');
       console.log('\n');
       console.table(res);
@@ -209,8 +210,7 @@ async function addEmployee() {
       {
         name: "action",
         type: "list",
-        message: "Please enter the correct corresponding ID. View all employees to get" +
-          " the employee ID. Do you know the employee ID?",
+        message: "Please enter the correct corresponding ID. View all employees to get the employee ID. Do you know the employee ID?",
         choices: [promptQ.yes, promptQ.no]
       }
     ]).then(answer => {
