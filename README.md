@@ -1,6 +1,4 @@
-# employee_tracker
-
-# company-dime-exquisite-employee-tracker
+# Employee Tracker
 
 ## Table of contents
 - [Description](#description)
@@ -54,6 +52,9 @@ The application is user friendly and built to handle large amount of data and us
 * *Add An Employee* - command line adds a new entry to the database.
 * *Remove An Employee* - command line deletes an employee from the database
 * *Update Employee Role* - command line updates the role/title of an employee.
+
+## Demo Walk-through Video:   
+[Demo](https://drive.google.com/file/d/1Nx51URlFuRJx64NZyQOGn2L2gB7p9A_s/view?usp=sharing)
 
 ## Technologies
 * MySQL
